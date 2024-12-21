@@ -26,6 +26,11 @@ Carry = AB + ACin + BCin
 
 **Figure -1 FULL ADDER**
 
+**Truth Table**
+
+![full adder](https://github.com/user-attachments/assets/d277e57b-eb6c-4df4-972a-6234c6bfafcf)
+
+
 **Full Subtractor**
 
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
@@ -38,7 +43,8 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
-![WhatsApp Image 2024-11-12 at 2 18 06 PM (1)](https://github.com/user-attachments/assets/38c21d5a-e1e9-45ae-b7a4-ea8b3b146179)
+![ful sub](https://github.com/user-attachments/assets/2596bde1-afb5-40ce-8960-3881d46e7590)
+
 
 
 
@@ -57,7 +63,12 @@ Borrow out = A'Bin + A'B + BBin
 **Program:**
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by:CHITTOOR SARAVANA MRUDHULA                                                      RegisterNumber:24003790
+Developed by:CHITTOOR SARAVANA MRUDHULA                                                  
+
+RegisterNumber:24003790
+
+
+Full Adder
 
 ```
 module full_adder(A,B,Cin,sum,carry);
@@ -67,6 +78,9 @@ assign sum=(A^B^Cin);
 assign carry=((A&B)|((A^B)&Cin));
 endmodule
 ```
+
+Full Subtractor
+
 ```
 module full_subtractor(A,B,Bin,diff,borr);
 input A,B,Bin;
@@ -78,9 +92,11 @@ endmodule
 
 **RTL**
 
+Full Adder
 
 ![Experiment 4           DE](https://github.com/user-attachments/assets/865ff7d6-b91e-4e47-b64e-7df5ae4776f2)
 
+Full Subtractor
 
 ![Experiment 4 1   DE](https://github.com/user-attachments/assets/f3691a52-0784-4bf8-b7ad-dff2c7dc8fe1)
 
@@ -89,15 +105,18 @@ endmodule
 **Output Timing Waveform**
 
 
+Full Adder
+
 ![Experiment 4      DE](https://github.com/user-attachments/assets/d02155fe-4312-4704-8a8b-35f7bfb6e088)
 
+Full Subtractor
 
 ![Experiment 4 1 DE](https://github.com/user-attachments/assets/4d6fbae5-0688-492e-920b-9b39064ea86f)
 
 
-**Result:**
+**Result**
 
-Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
+The Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
 
 
 
